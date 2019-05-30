@@ -1,0 +1,21 @@
+model Takmicenje {
+    naziv = CharField(max_length = 100, null = True, default = 1)
+};
+
+model Trka {
+    takmicenje = ForeignKey(model = Takmicenje, on_delete = models.CASCADE, default = 1)
+    naziv = CharField(max_length = 100, null = True, default = 1)
+    duzina_km = IntegerField(max_length = 15, null = True)
+    cena = IntegerField(max_length = 15, null = True)
+    datum = DateTimeField(null = True, default = timezone.now)
+    organizator = CharField(max_length = 100, null = True, default = 1)
+};
+
+model Takmicar {
+    trka = ForeignKey(model = Trka, on_delete = models.CASCADE, default = 1)
+    ime = CharField(max_length = 100, null = True, default = 1)
+    prezime = CharField(max_length = 100, null = True, default = 1)
+    jmbg = CharField(max_length = 100, null = True, default = 1)
+    pol = CharField(max_length = 13, null = True, default = 1)
+    kontakt =EmailField(max_length = 64, null = False, default = 1)
+};
