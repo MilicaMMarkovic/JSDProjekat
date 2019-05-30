@@ -10,7 +10,7 @@ Trka:
     naziv = ID ":"
     "duzina_km" "=" duzina_km = INT
     "cena" "=" cena = INT
-    "datum" "=" datum = INT
+    "datum" "=" datum = STRING
     "organizator" "=" organizator = STRING
     "Takmicari" ":"
     takmicar *= Takmicar[";"]
