@@ -84,3 +84,7 @@ Var:
 OnDelete:
     'on_delete' '=' 'models.CASCADE'
 ;
+
+Comment:
+  /\/\/.*$/
+;
