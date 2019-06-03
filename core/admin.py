@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Takmicenje, Trka, Takmicar
 
-# Register your models here.
+admin.site.register(Takmicenje)
+admin.site.register(Takmicar)
+admin.site.register(Trka)
