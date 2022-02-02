@@ -88,7 +88,7 @@ def execute(path, grammar_file_name, example_file_name, export_dot, export_png):
             string += '\n\n'
         return string
 
-    with open(r'C:\Users\Mica\Desktop\JSDProjekat\core\views.py', 'w') as f:
+    with open(r'C:\Users\Administrator\Desktop\JSDProjekat\core\views.py', 'w') as f:
         a = function(model.models)
         f.write(a)
 
@@ -169,7 +169,7 @@ def execute(path, grammar_file_name, example_file_name, export_dot, export_png):
         return string
 
     #   with open(join("C:\Users\Mica\Desktop\JSDProjekat", '\core\models.py'), 'w') as f:
-    with open(r'C:\Users\Mica\Desktop\JSDProjekat\core\models.py', 'w') as f:
+    with open(r'C:\Users\Administrator\Desktop\JSDProjekat\core\models.py', 'w') as f:
         a = functionM(model.models)
         f.write(a)
 
@@ -180,7 +180,7 @@ def execute(path, grammar_file_name, example_file_name, export_dot, export_png):
         string += ']'
         return string
 
-    with open(r'C:\Users\Mica\Desktop\JSDProjekat\core\urls.py', 'w') as f:
+    with open(r'C:\Users\Administrator\Desktop\JSDProjekat\core\urls.py', 'w') as f:
         a = functionU(model)
         f.write(a)
 
@@ -220,6 +220,6 @@ def execute(path, grammar_file_name, example_file_name, export_dot, export_png):
         string += 'admin.site.register(' + model.name + ')\n'
         return string
 
-    with open(r'C:\Users\Mica\Desktop\JSDProjekat\core\admin.py', 'w') as f:
+    with open(r'C:\Users\Administrator\Desktop\JSDProjekat\core\admin.py', 'w') as f:
         a = functionA(model)
         f.write(a)
