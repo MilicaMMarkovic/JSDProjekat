@@ -215,9 +215,9 @@ def execute(path, grammar_file_name, example_file_name, export_dot, export_png):
             else:
                 string += ', '
         string += '' + '\n'
-        string += 'admin.site.register(' + model.name + ')\n'
-        string += 'admin.site.register(' + model.name + ')\n'
-        string += 'admin.site.register(' + model.name + ')\n'
+        for model in set(model.parent.models):
+            string += 'admin.site.register(' + model.name + ')\n'
+        string += '' + '\n'
         return string
 
     with open(r'C:\Users\Administrator\Desktop\JSDProjekat\core\admin.py', 'w') as f:
